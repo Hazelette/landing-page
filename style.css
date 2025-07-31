@@ -7,13 +7,15 @@ body{
     /* need to make other parts column based like information, footer, quote etc */
     /* Note:  Flexbox properties only apply to the direct children of the flex container. */
 }
-.header{
+
+/* Styling for header and its children */
+.header {
     display: flex;
     background-color: #1F2937;
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    padding: 0 16px;
+    padding: 0 150px;
 }
 .logo{
     color: white;
@@ -34,5 +36,57 @@ a{
 }
 .header-links {
     display: flex;
-    gap: 16px;
+    gap: 20px;
+}
+/* Styling for hero section components */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 75px 150px;
+    background-color: #1F2937; /* Dark background for hero section */
+    gap: 50px; /* Space between text and image */  
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 1 auto;
+    max-width: 500px; /* Limit width of text section */
+    /* better than just setting basis to 500 since it can shrink and grow */
+    padding: 0 20px;
+}
+.hero-title{
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAFB;
+    margin: 0; /* removing default margin */
+}
+.hero-subtitle{
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-top: 10px;   
+}
+.hero-button{
+    background-color: #3B82F6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.hero-image {
+    flex: 1 1 auto; /* Allow image to grow and shrink */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    max-width: 500px; /* Limit width of image section */
+}
+.hero-image img {
+    display: flex;
+    width: 100%; /* Make image responsive */
+
 }
