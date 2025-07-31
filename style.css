@@ -2,8 +2,37 @@ body{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    margin: 0; /* removing default margin on body */
+    /* need to make other parts column based like information, footer, quote etc */
+    /* Note:  Flexbox properties only apply to the direct children of the flex container. */
+}
+.header{
+    display: flex;
+    background-color: #1F2937;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0 16px;
+}
+.logo{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 24px;
 }
 ul {
+    list-style: none;
+    /* remove default margin and padding */
+    margin: 0;
+    padding: 0;
+}
+a{
     text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+.header-links {
+    display: flex;
+    gap: 16px;
 }
