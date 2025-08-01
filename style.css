@@ -51,7 +51,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-start; /* Align text to the left */
     flex: 1 1 auto;
     max-width: 500px; /* Limit width of text section */
     /* better than just setting basis to 500 since it can shrink and grow */
