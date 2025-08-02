@@ -121,3 +121,19 @@ a{
     margin: 0 20px; /* Space around text */
     padding-bottom: 50px; /* Space below text */
 }
+
+/* Styling for the and footer copyright text, should be the bit */
+.footer{
+    display: flex;
+    background-color: #1F2937;
+    justify-content: center; /* Center the footer content */
+    align-items: center; /* Center the footer content vertically */
+}
+
+.copyright {
+    color: #E5E7EB; /* Light gray text for copyright */
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0; /* Space around the copyright text */
+}
+/* END */
