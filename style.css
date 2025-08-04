@@ -123,29 +123,37 @@ a{
     width: 100%; /* Make text responsive */
 }
 /* Quote div Styling */
+/* New quote container added to deal with background coloring issues */
+.quote-container{
+    background-color: #E5E7EB; /* Light background for quote section */
+    display: flex;
+    padding: 75px 0; /* Space around the quote section */
+    justify-content: center; /* Center the quote section */
+}
 .quote-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; /* Center the quote text */
-    padding: 75px 20px; /* Space around the quote */
-    background-color: #E5E7EB; /* Light background for quote section */
+
+    /* OVERFLOW FIX */
+    padding: 0 20px; /* Add horizontal padding to the content itself */
+    width: 100%; 
+    max-width: 1100px;
+    margin: 0 auto; /* Center the quote section */
 
 }
 .quote{
     font-size: 36px;
     font-weight: 900;
     color: #1F2937; /* Dark text for contrast */
-    max-width: 800px;
-    width: 100%; /* Make quote responsive */
+    text-align: left;
 }
 /* making use of align self to move 1 item */
 .quote-name{
     font-size: 24px;
-    max-width: 800px;
     align-self: flex-end; /* Align name to the right */
-    margin-right: 250px;
-    width: 100%; /* Make name responsive */
+    text-align: right; /* Align text to the right */
 }
 /* Styling for the and footer copyright text, should be the bit */
 .footer{
