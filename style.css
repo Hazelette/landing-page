@@ -155,9 +155,44 @@ a{
     align-self: flex-end; /* Align name to the right */
     text-align: right; /* Align text to the right */
 }
-
 /* TODO: Signup div Styling */
+.signup-container {
+    display: flex;
+    justify-content: center; /* Center the signup section */
+    padding: 50px 0; /* Space around the signup section */
+}
+.signup{
+    display: flex;
+    justify-content: space-between; /* push content to edge */ 
+    align-items: center; /* Center the text and button vertically */
+    /* Styling for entire blue box */
+    background-color: #3B82F6; /* Blue background for signup section */
+    color: white; /* White text for contrast */
+    padding: 40px 150px; /* Space around the text */
+    border-radius: 8px; /* Rounded corners for the text box */
 
+    /* Long and thin box */
+    width: 100%; /* Make the signup section full width */
+    max-width: 900px; /* Limit the width of the signup section */
+}
+/* Should be vertical flex container */
+.signup-text{
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+}
+.signup-header{
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Font size for the header */
+}
+.signup-button{
+    color: white; /* White text for the button */
+    background-color: #3B82F6; /* Blue background for the button */
+    padding: 10px 20px; /* Space around the button text */
+    border: 2px solid white; /* Blue border for the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for the button text */
+}
 /* Styling for the and footer copyright text, should be the bit */
 .footer{
     display: flex;
@@ -165,7 +200,6 @@ a{
     justify-content: center; /* Center the footer content */
     align-items: center; /* Center the footer content vertically */
 }
-
 .copyright {
     color: #E5E7EB; /* Light gray text for copyright */
     font-size: 14px;
